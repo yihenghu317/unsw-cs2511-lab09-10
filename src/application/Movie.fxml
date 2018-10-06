@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.util.ArrayList?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.5133779264214047" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <GridPane layoutX="21.0" prefHeight="266.0" prefWidth="845.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="147.5" minWidth="10.0" prefWidth="110.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="247.5" minWidth="10.0" prefWidth="131.5" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="268.5" minWidth="10.0" prefWidth="173.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="339.5" minWidth="10.0" prefWidth="253.5" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="118.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="83.5" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="m1type" prefHeight="28.0" prefWidth="89.0" text="Children" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="m1title" text="Annabelle" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="m2type" prefHeight="28.0" prefWidth="67.0" text="Classic" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="m2title" text="Inception" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="m3type" text="Regular" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="m4type" text="New" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="m5type" text="Regular" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="m3title" text="The Shining" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="m4title" text="It" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="m5title" text="The Cube" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label text="Type" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label text="Title" textAlignment="CENTER" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label text="Rental Days" textAlignment="CENTER" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </Label>
+                <fx:define>
+         		<ArrayList fx:id="MovieType">
+         			<fx:reference source="m1type" />
+         			<fx:reference source="m2type" />
+         			<fx:reference source="m3type" />
+         			<fx:reference source="m4type" />
+         			<fx:reference source="m5type" />
+         		</ArrayList>
+         		</fx:define>
+            	<fx:define>
+         		<ArrayList fx:id="MovieTitle">
+         			<fx:reference source="m1title" />
+         			<fx:reference source="m2title" />
+         			<fx:reference source="m3title" />
+         			<fx:reference source="m4title" />
+         			<fx:reference source="m5title" />
+         		</ArrayList>
+         		</fx:define>
+                  <TextField fx:id="m1days" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="69.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <TextField fx:id="m2days" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="69.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <TextField fx:id="m3days" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="69.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <TextField fx:id="m4days" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="69.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                  <TextField fx:id="m5days" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="69.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                  <Button fx:id="addm2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addtocartm2" prefHeight="28.0" prefWidth="88.0" text="Add to cart" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                  <Button fx:id="addm3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addtocartm3" prefHeight="28.0" prefWidth="88.0" text="Add to cart" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                  <Button fx:id="addm4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addtocartm4" prefHeight="28.0" prefWidth="88.0" text="Add to cart" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                  <Button fx:id="addm5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addtocartm5" prefHeight="28.0" prefWidth="88.0" text="Add to cart" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                  <Button fx:id="addm1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addtocartm1" prefHeight="28.0" prefWidth="88.0" text="Add to cart" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                  <fx:define>
+         			<ArrayList fx:id="Addtocart">
+         				<fx:reference source="addm1" />
+         				<fx:reference source="addm2" />
+         				<fx:reference source="addm3" />
+         				<fx:reference source="addm4" />
+         				<fx:reference source="addm5" />
+         			</ArrayList>
+         		</fx:define>
+         		<fx:define>
+         		<ArrayList fx:id="RentalDays">
+         			<fx:reference source="m1days" />
+         			<fx:reference source="m2days" />
+         			<fx:reference source="m3days" />
+         			<fx:reference source="m4days" />
+         			<fx:reference source="m5days" />
+         		</ArrayList>
+         		</fx:define>
+                  <Label fx:id="m1np" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="19.0" />
+                     </font></Label>
+                  <Label text="Daily Charge" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="m2np" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="m3np" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="m4np" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="m5np" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="m1dp" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="m2dp" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="m3dp" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="m4dp" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="m5dp" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label text="Normal Charge" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+           <fx:define>
+         		<ArrayList fx:id="MovieNormalprice">
+         			<fx:reference source="m1np" />
+         			<fx:reference source="m2np" />
+         			<fx:reference source="m3np" />
+         			<fx:reference source="m4np" />
+         			<fx:reference source="m5np" />
+         		</ArrayList>
+         	</fx:define>
+         	
+         	<fx:define>
+         		<ArrayList fx:id="MovieDailyprice">
+         			<fx:reference source="m1dp" />
+         			<fx:reference source="m2dp" />
+         			<fx:reference source="m3dp" />
+         			<fx:reference source="m4dp" />
+         			<fx:reference source="m5dp" />
+         		</ArrayList>
+         	</fx:define>
+            <Label fx:id="alarm" layoutX="587.0" layoutY="274.0" prefHeight="17.0" prefWidth="172.0" textFill="#e10707" />
+            <DatePicker fx:id="date" layoutX="14.0" layoutY="270.0" />
+            <Label fx:id="datealarm" layoutX="208.0" layoutY="274.0" prefHeight="17.0" prefWidth="225.0" textFill="#df2a2a" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="264.0" prefWidth="898.0">
+         <children>
+            <Label layoutX="194.0" layoutY="249.0" text="Total">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></Label>
+            <Label fx:id="TotalPrice" layoutX="248.0" layoutY="254.0" prefHeight="17.0" prefWidth="108.0">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <TableView fx:id="orderlist" layoutX="53.0" layoutY="14.0" prefHeight="227.0" prefWidth="389.0">
+              <columns>
+                <TableColumn fx:id="MovieColumn" prefWidth="211.5" text="Movie" />
+                <TableColumn fx:id="PriceColumn" prefWidth="176.5" text="Price" />
+              </columns>
+            </TableView>
+            <Button fx:id="deletebutton" layoutX="465.0" layoutY="216.0" mnemonicParsing="false" onAction="#deleteitem" text="Delete" />
+            <Label fx:id="surchargenote" layoutX="465.0" layoutY="157.0" prefHeight="17.0" prefWidth="279.0" />
+            <Label fx:id="discountnote" layoutX="465.0" layoutY="183.0" prefHeight="17.0" prefWidth="270.0" />
+         </children>
+      </AnchorPane>
+  </items>
+</SplitPane>
